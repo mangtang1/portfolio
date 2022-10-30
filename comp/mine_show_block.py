@@ -5,7 +5,7 @@ import json
 import rsa
 from hashlib import sha256 as sha
 from ecdsa import SigningKey, NIST256p
-path_form_datas = "/home/comp/jsons/form_datas.json"
+path_form_datas = "jsons/form_datas.json"
 
 def get_time():
     then = datetime(2000,1,1,0,0,0)
