@@ -3,9 +3,10 @@ import sys
 from datetime import datetime
 import json
 import rsa
+from math import floor
 from hashlib import sha256 as sha
 from ecdsa import SigningKey, NIST256p
-path_form_datas = "jsons/form_datas.json"
+path_form_datas = "form_datas.json"
 
 def get_time():
     then = datetime(2000,1,1,0,0,0)
@@ -122,7 +123,10 @@ def make_trans(utxo, utxo_list, address, public_key, private_key):
     return trans
     
 def minor_get_award(unmined_block, address, public_key, private_key):
-    award = admin_award
+    award = unmined_block["award"]
+    decr = 2**floor(unmined_block["hash_cnt"]/5000)
+    
+    award = floor(award/decr)
     if(not unmined_block.get("trans_list")== None): trans_list=unmined_block["trans_list"]
     else : trans_list={}
     for key, value in trans_list.items():
@@ -178,8 +182,6 @@ def make_mined_block(unmined_block, minor_address, minor_public_key, minor_priva
     unmined_block["trans_list"]=trans_list
     return cal_nonce(unmined_block)
 
-tax_rate = 0.001
-admin_award = 10000
 url = "https://mangtang.shop/temp/show_block.json"
 minor_address = sys.argv[1]
 minor_public_key = sys.argv[2]
