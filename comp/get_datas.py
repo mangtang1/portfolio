@@ -10,7 +10,8 @@ url = "https://mangtang.shop/wallet/copywallet.php"
 userid = sys.argv[1]
 userpw = sys.argv[2]
 walletpw = sys.argv[3]
-show_page = requests.get(url+"?userid=%s&userpw=%s&walletpw=%s"%(userid,userpw,walletpw))
+query = url+"?userid=%s&userpw=%s&walletpw=%s"%(userid,userpw,walletpw)
+show_page = requests.get(query)
 jstr = show_page.content.decode()
 
 if("wrong" in jstr):
