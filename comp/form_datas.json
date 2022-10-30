@@ -42,6 +42,7 @@
 		"version": "%s",
 		"bits": "%s",
 		"award": "%d",
+		"tax_rate": "%f",
 		"nonce": "%d",
 		"trans_list": "%j"
 	},

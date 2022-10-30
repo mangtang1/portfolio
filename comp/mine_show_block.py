@@ -56,7 +56,7 @@ def data_to_form_string(data,form):
             continue
             
         if(fd == "%d"):
-            res=res+"%d"%val
+            res=res+"%d"%floor(val)
         elif(fd == "%s"):
             res=res+"\"%s\""%(val)
         elif(fd == "%a"):
