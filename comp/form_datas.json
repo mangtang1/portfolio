@@ -30,6 +30,7 @@
 		"outputs":"%j",
 		"input_coin":"%d",
 		"output_coin":"%d",
+		"tax":"%d",
 		"public_key":"%h",
 		"hash":"%h",
 		"signature":"%h"
@@ -43,6 +44,8 @@
 		"bits": "%s",
 		"award": "%d",
 		"tax_rate": "%f",
+		"half_life": "%d",
+		"minor":"%a",
 		"nonce": "%d",
 		"trans_list": "%j"
 	},
@@ -56,6 +59,7 @@
 		"current_version":"%s",
 		"hash_cnt":"%d",
 		"tax_rate":"%f",
+		"half_life":"%d",
 		"award":"%f",
 		"%h":"%j_block"
 	}

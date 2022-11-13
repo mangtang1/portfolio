@@ -119,6 +119,7 @@ def make_trans(utxo, utxo_list, address, public_key, private_key):
     trans["outputs"]={}
     trans["input_coin"]=utxo
     trans["output_coin"]=0
+    trans["tax"]=0
     trans["public_key"]=public_key
     return trans
     
@@ -170,9 +171,9 @@ def cal_nonce(block):
     while(True):
         json_block = block
         json_block["nonce"]=nonce
-        hash = make_hash_block(json_block)
+        hash = make_hash_data(json_block,"block")
         nonce = nonce + 1
-        #print(hash,nonce)
+        
         if int('0x'+target,16)>int('0x'+hash,16) :        
             return json_block
             
@@ -180,6 +181,7 @@ def cal_nonce(block):
 def make_mined_block(unmined_block, minor_address, minor_public_key, minor_private_key):
     trans_list = minor_get_award(unmined_block, minor_address, minor_public_key, minor_private_key)
     unmined_block["trans_list"]=trans_list
+    unmined_block["minor"]=minor_address
     return cal_nonce(unmined_block)
 
 url = "https://mangtang.shop/temp/show_block.json"
