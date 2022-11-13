@@ -3,7 +3,7 @@ import sys
 
 argc = len(sys.argv)
 if(argc<4):
-    print("get_datas.py id password")
+    print("get_datas.py userid userpw walletpw")
     exit()
     
 url = "https://mangtang.shop/wallet/copywallet.php"
