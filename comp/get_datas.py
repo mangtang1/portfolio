@@ -18,4 +18,4 @@ if("wrong" in jstr):
     print("Wrong Id Or Password!")
     
 else:
-    print("python3 comp/mine_show_block.py %s"%(jstr))
+    print("python3 mine_show_block.py %s"%(jstr))
