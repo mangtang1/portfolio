@@ -1,0 +1,21 @@
+
+<body>
+
+	</style>
+	<script>
+		let removeToast;
+		function toast(string) {
+			const toast = $('#toast');
+			toast.classList.contains("reveal") ?
+			(clearTimeout(removeToast), removeToast = setTimeout(function () {
+				toast.classList.remove("reveal")
+			}, 1000)) :
+			removeToast = setTimeout(function () {
+				toast.classList.remove("reveal")
+			}, 1000)
+		toast.classList.add("reveal"),
+		toas.innerText=string
+	}
+	</script>
+	<div id="toast"></div>
+</body>

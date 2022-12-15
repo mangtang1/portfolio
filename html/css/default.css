@@ -1,0 +1,57 @@
+@charset "utf-8";
+	
+:root {
+	/** color **/
+	--whiteColor : #FFFFFF;
+	--baseColor : #F0EEEE;
+	--greenColor : #81B749;
+	--cyanColor : #166D7C;
+	--purpleColor : #5274A6;
+	--pinkColor : #FF6F91;
+	--yellowColor : #FAF04A;
+	--brownColor : #99925C;
+	--navyColor : #5274A6;
+	--skydarkColor : #56A1B1;
+	--skygreenColor : #E6F4F1;
+	--skyColor : #00C7FA;
+	--blueColor : #3F9CFF;
+	--margentaColor : #C86F92;
+	/**size**/
+	--baseContainer : 90vw;
+}
+html {
+	font-size:100%;
+}
+
+body {
+	background-color:transparent !important;
+}
+h1, .h1 {
+	font-size:3rem !important;
+}
+h2, .h2 {
+	font-size:2.5rem !important;
+}
+h3, .h3{
+	font-size:2rem !important;
+}
+h4, .h4{
+	font-size:1.75rem !important;
+}
+h5, .h5{
+	font-size:1.5rem !important;
+}
+
+.form-control {
+	font-size:1.5rem !important;
+}
+
+* {font-family:"NanumSquareNeo";}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+

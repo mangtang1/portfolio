@@ -1,0 +1,10 @@
+.blocktool {
+	display:block;
+	overflow:hidden;
+	margin-top : 5rem;
+	width: 80vw;
+	max-width : 600px;
+	height : 30rem;
+	max-height : 80vw;
+	background-color : #FFFFFF;
+}

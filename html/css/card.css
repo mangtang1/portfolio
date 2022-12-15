@@ -1,0 +1,65 @@
+.maincard .header-left {
+			grid-area : header-left;
+			border-bottom : 2pt solid var(--navyColor);
+		}
+		.maincard .header-right {
+			grid-area : header-right;
+			border-bottom : 2pt solid var(--navyColor);
+		}
+		.maincard .side-left {
+			grid-area : side-left;
+		}
+		.maincard .side-right {
+			grid-area : side-right;
+		}
+		.maincard .footer-left {
+			grid-area : footer-left;
+		}
+		.maincard .footer-right {
+			grid-area : footer-right;
+		}
+		.maincard .title {
+			grid-area : title;
+			width:100%;
+			height:100%;
+			justify-self : stretch;
+			text-align : center;
+			vertical-align : middle;
+			margin:auto;
+			overflow:hidden;	
+			border-bottom : 2pt solid var(--navyColor);
+		}
+		.maincard .main {
+			grid-area : main;
+		}
+		.maincard .subbut {
+			grid-area : subbut;
+			margin-left : 3rem;
+			margin-right: 3rem;
+			align-self : stretch;
+			justify-self : stretch;
+			border : 2pt solid var(--navyColor);
+			border-radius : 30px;
+			background-color : var(--whiteColor);
+			color : var(--navyColor);
+		}
+		.maincard {
+			width : 90vw;
+			height : 40vh;
+			max-height : 500px;
+			max-width : 700px;
+			display:grid;
+			background : var(--whiteColor);
+			border-radius : 40px;
+			justify-content : stretch;
+			align-items : stretch;
+			grid-template-columns: 4rem auto 4rem;
+			grid-template-rows: 4rem auto 4rem;  
+			grid-template-areas:
+
+			"header-left title header-right"
+			"side-left main side-right"
+			"footer-left subbut footer-right";
+			z-index:1;
+			margin:auto;
+		}

@@ -1,0 +1,13 @@
+{
+	"time": "2b2e57e6",
+	"hashprevblock": "00000c46424cca8f5990426dfe570841fd2df67ca7ef25178048c51a4dddf5fd",
+	"hash_cnt": 5473,
+	"version": "06",
+	"bits": "39999999",
+	"award": 10000,
+	"tax_rate": 0.001,
+	"half_life": 1000,
+	"nonce": 0,
+	"minor": "",
+	"trans_list": {}
+}
