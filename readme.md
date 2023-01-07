@@ -1,3 +1,7 @@
-comp 는 채굴용 python 코드
-html 은 https://mangtang.shop 의 코드
-server 은 클라우드 서버의 코드입니다.
+git clone https://github.com/mangtang1/portfolio.git
+cd comp
+#계좌 정보 알아내기
+python3 get_datas.py {유저아이디} {유저비밀번호} {계좌비밀번호}
+#채굴하기
+python3 mine_show_block.py {계좌주소} {계좌공개키} {계좌비밀키}
+
