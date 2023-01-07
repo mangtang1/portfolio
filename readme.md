@@ -1,3 +1,4 @@
+#맹트코인 채굴 방법
 git clone https://github.com/mangtang1/portfolio.git
 cd comp
 #계좌 정보 알아내기
